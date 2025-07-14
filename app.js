@@ -78,6 +78,22 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.classList.remove('show');
     }
   };
+
+  const bgMusic = document.getElementById('bgMusic');
+  const toggleBtn = document.getElementById('toggleMusic');
+  let isPlaying = false;
+
+  toggleBtn.addEventListener('click', function () {
+    if (isPlaying) {
+      bgMusic.pause();
+      toggleBtn.innerText = '🔈 Play Music';
+    } else {
+      bgMusic.play();
+      toggleBtn.innerText = '🔇 Stop Music';
+    }
+    isPlaying = !isPlaying;
+  });
+
 });
 
 
