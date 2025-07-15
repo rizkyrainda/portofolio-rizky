@@ -79,9 +79,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  const bgMusic = document.getElementById('bgMusic');
+   const bgMusic = document.getElementById('bgMusic');
   const toggleBtn = document.getElementById('toggleMusic');
-  let isPlaying = false;
+  let isPlaying = true;
+
+  // Unmute on first user interaction
+  document.addEventListener('click', function autoPlayOnce() {
+    bgMusic.muted = false;
+    bgMusic.play();
+    document.removeEventListener('click', autoPlayOnce);
+  });
 
   toggleBtn.addEventListener('click', function () {
     if (isPlaying) {
