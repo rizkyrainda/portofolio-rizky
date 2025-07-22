@@ -228,9 +228,9 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/keyboard.jpeg);
+	background-image: url(./img/rogg.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: center center;
 	position: relative;
 	z-index: 1;
 }
@@ -246,6 +246,36 @@ p {
 	opacity: 0.7;
 	z-index: -1;
 }
+
+/* #hero {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -2;
+}
+
+#hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	z-index: -1;
+} */
+
 
 #hero .hero {
 	max-width: 1200px;
@@ -446,15 +476,16 @@ p {
 }
 
 #projects .project-img:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.7;
-  pointer-events: none; /* ⬅️ Tambahkan ini agar lapisan bisa diklik tembus ke bawah */
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+	pointer-events: none;
+	/* ⬅️ Tambahkan ini agar lapisan bisa diklik tembus ke bawah */
 }
 
 
@@ -468,61 +499,61 @@ p {
 
 /* Modal navigation buttons */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  align-items: center;
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.9);
+	justify-content: center;
+	align-items: center;
 }
 
 .modal.show {
-  display: flex !important;
+	display: flex !important;
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 90vw;
-  height: 60vw;
-  max-width: 1200px;
-  max-height: 800px;
-  object-fit: cover;
-  border-radius: 10px;
+	margin: auto;
+	display: block;
+	width: 90vw;
+	height: 60vw;
+	max-width: 1200px;
+	max-height: 800px;
+	object-fit: cover;
+	border-radius: 10px;
 }
 
 
 .modal .prev,
 .modal .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  user-select: none;
-  z-index: 10000;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	user-select: none;
+	z-index: 10000;
 }
 
 .modal .prev {
-  left: 10px;
+	left: 10px;
 }
 
 .modal .next {
-  right: 10px;
+	right: 10px;
 }
 
 .modal .prev:hover,
 .modal .next:hover {
-  color: #ccc;
+	color: #ccc;
 }
 
 /* End Projects section */
@@ -636,21 +667,21 @@ p {
 /*End contact Section */
 
 #toggleMusic {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
-  background-color: #29323c;
-  color: white;
-  cursor: pointer;
-  z-index: 9999;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 15px;
+	font-size: 16px;
+	border: none;
+	border-radius: 10px;
+	background-color: #29323c;
+	color: white;
+	cursor: pointer;
+	z-index: 9999;
 }
 
 #toggleMusic:hover {
-  background-color: #485563;
+	background-color: #485563;
 }
 
 
